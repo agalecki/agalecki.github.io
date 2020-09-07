@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SAS Macros Downloads</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body >
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  <!--#include file="topMenu.shtml" -->
+
+  <tr>
+    <td width="144" align="center" valign="top" bgcolor="#F6F6F6" >
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top" rowspan="96" width="135">
+        
+        <!--#include file="leftMenu.shtml" -->
+
+        
+        </td>
+      </tr>
+    </table></td>
+    <td align="left" valign="top" bgcolor="#F6F6F6">
+      <div class="box" >
+   <span class="textSmBold">SOFTWARE DOWNLOADS</span></p>
+        <ul>
+          <li><a href="#SASMacros" class="link">SAS macros</a></li>
+          <li><a href="#Rpackages" class="link">R packages</a></li>
+        </ul>
+        <a name="SASMacros" id="SASMacros"></a>
+<p class="textSmBold">SAS MACROS
+<p><a name="nlmem"><b>NLMEM: A SAS/IML macro for nonlinear mixed effects models.</b></a><br>
+  Requires SAS/STAT, SAS/IML and NLINMIX macro for SAS Version 8<br><br>
+  To download NLMEM, please fill out this form first.
+<form method=POST action="http://www.umich.edu/cgi-bin/survey/agalecki">
+<input type=hidden name="successURL" value="http://www-personal.umich.edu/~agalecki/Web/get_nlmem.html">
+<input type=hidden name="filename" value="nlmem_downloads.data">
+ 
+<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
+<TR><TD>First Name</TD><TD><input type="text" name="first_name" size=30></TD></TR>
+<TR><TD>Last Name</TD><TD><input type="text" name="last_name" size=30></TD></TR>
+<TR><TD>Email</TD><TD><input type="text" name="email" size=30></TD></TR>
+<TR><TD>Title</TD><TD><input type="text" name="title" size=30></TD></TR>
+<TR><TD>Organization</TD><TD><input type="text" name="organization" size=30></TD></TR>
+<TR><TD>Comments</TD><TD><textarea name="comments" cols=30 rows=3></textarea></TD></TR>
+<TR><TD colspan=2 align=right><input type=submit value="Submit"></td></tr>
+</table></form>
+</p>
+
+     <p>
+<a name="ctim"><b>CTIM: A set of SAS macros for categorical traits interval mapping.</b></a><br>
+Download SAS file <a href=/~agalecki/ctim.sas>here</a>.
+</p>
+       
+        <p>
+<a name="sas2arc"><b>SAS2ARC: A SAS Macro to create an Arc data file from a SAS data set</b></a><br>
+Versions for Unix (<a href="/~agalecki/sas2arc.sh">shell archive</a>) and Windows (<a href="/~agalecki/sas2arc.zip">zipped</a> and <a href="/~agalecki/sas2arc/">unzipped</a>) are available.</p>
+        <a name="Rpackages" id="Rpackages"></a>
+        <p> --------------------------------------------------------------------------------------------------------- </p>
+        <p class="textSmBold"><strong>R PACKAGES</strong></p>
+        <p class="link"><a href="http://cran.r-project.org/web/packages/WWGbook/index.html" target="_blank" class="link"><strong>WWGbook</strong></a><br />
+        WWGbook package contains  datasets and scripts used in <a href="book1.html">West, Welch, and Galecki (2007) book</a></p>
+  
+        <p><a name="Rpackages_nlmeU" id="Rpackages_nlmeU"></a><strong>nlmeU Download:</strong>
+
+          <a href="../r_packages/nlmeU_0.60-11.tar.gz"><img src="Images/linuxLogo.gif" alt="linux" border="0" align="absbottom" 
+title="linux" />(.tar.gz)</a> |
+          <!-- WINDOWS BINARY -->
+          <a href="../r_packages/nlmeU_0.60-11.zip"><img src="Images/winLogo.gif" alt="windows" border="0" align="absbottom" 
+title="windows" />(.zip)</a> |
+          <!-- MAC BINARY -->
+          <a href="../r_packages/nlmeU_0.60-11.gz"><img src="Images/osxLogo.png" alt="macosx" width="20" height="20" border="0" 
+align="bottom" title="macosx" />(.tgz)</a>&nbsp;&nbsp;<br />
+         nlmeU package (under  development)&nbsp;contains datasets, scripts and functions used in<a href="book2.html"> Galecki  and Burzykowski (2013) book</a>.
+</p>
+        <p><strong>nlmeUpdK Download:&nbsp;</strong><a href="../r_packages/nlmeUpdK_0.3-0.tar.gz"><u><img border="0" width="30" height="30" src="Images/linuxLogo.gif" alt="linux" /></u>(.tar.gz)</a>&nbsp;|&nbsp;<a href="../r_packages/nlmeUpdK_0.3-0.zip"><u><img border="0" width="30" height="30" src="Images/winLogo.gif" alt="windows" /></u>(.zip)</a>&nbsp;|&nbsp;<u><img border="0" width="20" height="20" src="Images/osxLogo.png" alt="macosx" /></u>(.tgz)</strong><br />
+        nlmeUpdK is a companion package&nbsp;to nlmeU and contains scripts  and functions used in  <a href="book2.html">Galecki and Burzykowski  (2013) book</a> pertaining to a new pdMat  class (Sections 17.6-17.8 and 20.2) </p>
+
+<p class="link"><strong>nlmeU</strong> FAQ</p>
+        <ol>
+          <li> How to install packages needed  to run scripts from the book?
+            
+            Please use the following  instructions<br />
+            <br />
+          </li>
+          <ul>
+            <li>pckgs &lt;-  c(&quot;plyr&quot;, &quot;reshape&quot;, &quot;RLRsim&quot;,  &quot;WWGbook&quot;, &quot;ellipse&quot;)<br />
+              install.packages(pckgs)<br />
+              <br />
+            </li>
+            <li>To install lme4.0 package  (revision 1780 dated 2012-06-26) use:
+              
+              install.packages(&quot;lme4.0&quot;,  repos = &quot;http://R-Forge.R-project.org&quot;)<br />
+              <br />
+            </li>
+          </ul>
+          <li> How to obtain list of scripts  available in nlmeU package? <br />
+            <br />
+            <ul>
+              <li>After downloading nlmeU  package from this page please use:<br />
+                <br />
+                library(nlmeU)
+                <br />
+                runScript()<br />
+                <br />
+                Note: The results of executing scripts are stored  in files: Ch02.Rout, Ch03.Rout and so on.<br />
+                <br />
+              </li>
+            </ul>
+          </li>
+          <li> Results of running scripts  listed by runScript() function (see item 2) are different from those included  in the book. Why? <br />
+            <br />
+            We tested scripts from our  book using R2.15.0 (2012-03-30) under Windows  7 on x86_64-pc-mingw32/x64 (64-bit) platform. Results matched those  included in the book. We noted that results are slightly different for i386-pc-mingw32/i386 (32-bit) platform.<br />
+            <br />
+          </li>
+          <li>Is pdKronecker class  described in Chapter 17 and Section 20.2 available in nlmeU package?<br />
+            <br />
+pdKronecker class is not available in nlmeU package. It is available in nlmeUpdk companion package and can be  downloaded using:<br />
+ 
+install.packages(&quot;nlmeUpdK&quot;, repos =  &quot;http://R-Forge.R-project.org)<br />
+<br />
+          </li>
+          <li>What should I do, if I find an  error in one of the functions?<br />
+            <br />
+            We tested our functions  under different scenarios, but we consider our package to be under development  and inevitably errors may occur. Please report them to <a href="mailto:agalecki@umich.edu">agalecki@umich.edu</a>.<br />
+            We are also interested in  any of your comments on how to improve functions/and or scripts distributed  with the package.</li>
+        </ol>
+ 
+
+       
+       
+      </div> 
+        
+        
+    </td>
+  </tr>
+</table>
+</body>
+</html>

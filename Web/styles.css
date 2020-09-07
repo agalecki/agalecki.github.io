@@ -1,0 +1,91 @@
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+.titleLg {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FDB335;
+	line-height: 30px;	
+}
+.textSm {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #1B3269;
+	font-weight: 400;
+	
+}
+.textSmBold {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #1B3269;
+	font-weight: 600;
+}
+.textXSm {
+	font-size: 11px;
+	color: #1B3269;
+}
+.textXXSm {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #1B3269;
+}
+.menu
+{
+	font-size:10px;
+	line-height:1.7em;
+	color:#232C4D;
+	border-bottom:1px solid #C8C7BA;
+	font-weight:bold;
+}
+A.linkMenu {
+	FONT-WEIGHT: bolder;
+	color: #1B3269;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	}
+A.linkMenuSelected {
+	FONT-WEIGHT: bolder;
+	color: #999;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+}
+A.link {
+	FONT-WEIGHT: normal;
+	color: #1B3269;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+}
+
+A.linkMenu:hover {
+	COLOR: #EE9602;
+	TEXT-DECORATION: underline;
+	font-weight: bold;
+}
+A.link:hover {
+	COLOR: #EE9602;
+	TEXT-DECORATION: underline
+}
+.bcgTop {
+	background-image: url(Images/bcgGrad.gif);
+	height: 75px; 
+ 
+}
+.box {
+	height: auto;
+	width: auto;
+	padding: 15px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	margin-top: 0px;
+	position: inherit;
+	border-right-color: #A6A6A6;
+	border-left-color: #A6A6A6;
+	border-right-style: solid;
+}
