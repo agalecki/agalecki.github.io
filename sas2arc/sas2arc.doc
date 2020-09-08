@@ -1,0 +1,100 @@
+SAS2ARC: A SAS Macro to create an Arc data file from a SAS data set. 
+Arc is  the regression package described in R. D. Cook and S. Weisberg
+(1999),  "Applied Regression Including Computing and Graphics," Wiley.
+
+
+OS:             WINDOWS
+                UNIX version also available
+SAS VERSION     6.12, 8.00
+DATE:           06/05/99
+SOURCE:         http://www-personal.umich.edu/~agalecki/
+Prepared by:
+            Andrzej Galecki M.D.,Ph.D.
+            Geriatrics Research and Training Center
+            Institute of Gerontology
+            University of Michigan
+            300 North Ingalls
+            Ann Arbor, MI 48109-2007
+and
+            Yiqun Zhang
+            Department of Biostatistics
+            University of Michigan
+            Ann Arbor, MI 48109-2029
+
+Authors are ready to assist users in the implementation of this macro
+whenever possible.
+
+            E-mail: agalecki@umich.edu
+            tel. 734-936-2138
+
+The University of Michigan Institute of Gerontology gives
+general permission for this SAS2ARC macro to be copied and distributed to
+interested users free of charge. However neither the author nor the
+Institute of Gerontology at the University of Michigan can be
+responsible for any errors herein or for the consequences of using this
+program.
+
+General description
+-------------------
+SAS2ARC.SAS is a SAS macro designed to transform SAS data sets into
+datasets in Arc format.  The distribution consists of five files:
+
+sas2arc.doc - this file.
+sas2arc.inc - declaration of macros.
+sas2arc.sas - an example of macro invocation.
+Class.lsp   - an example of output file for use by Arc program.
+Classmss.lsp- another example of the output file.
+
+
+Usage
+-----
+The file sas2arc.sas provides an example of the use of this macro. The first
+50 lines of that file create a SAS dataset called `class' with variables named
+name, height, weight, age, and gender.  SAS2Arc can write this dataset onto a
+file that can be read by Arc, as follows.  First, the macro must be included
+in the SAS session:
+
+%include 'sas2arc.inc';
+
+Next, we create the data file:
+
+%sas2arc(data=class);
+
+Macro variables 
+---------------
+The sas2arc macro accepts several variables, as follows:
+
+DATA        - REQUIRED name of the input SAS dataset.
+FILE        - OPTIONAL output file name for Arc data. If FILE is not 
+              specified, the output will be the input SAS data set name 
+              with a .lsp extension.
+ARCDATA     - OPTIONAL Arc dataset name. If ARCDATA not specified then 
+              Arc dataset name is the same as SAS dataset name.
+              See the file Class.lsp for an example.
+DESCRIPT    - Description about the data set you want to output to the Arc
+              dataset file. By default description is:
+              Created from SAS dataset <Input SAS dataset>.  This can be any 
+              not quoted text string that provides a description of the
+              dataset.
+MISSING     - specifies missing character in Arc data. By default the missing
+              value character is a ?.  The SAS missing value character "."
+              CANNOT be used by Arc.
+
+The file sas2arc.sas provides a complete example.
+
+Translating Arc datasets to SAS datasets
+----------------------------------------
+It is also possible to go the other way, and translate Arc datasets to SAS
+datasets.  If you are using version 1.00 of Arc, you will need to download the
+most recent version of updates.lsp from www.stat.umn.edu/arc; the changes will
+be part of version 1.1 when it is released.
+
+	1.  Start Arc, and load the data file of interest.
+	2.  Select the item "Display data" from the dataset menu.
+	3.  Check the box for "Save data in an interchange file."  After pushing
+OK, select a file name for the interchange file.
+   4.  The interchange file will have variable names in the first row, and
+values in succeeding rows, with ? used as a missing value character.  Strings
+will have "_" substituted for " ", so, for example, Los Angeles becomes
+Los_Angeles.  Strings are not quoted.  This file can be used with SAS or most
+any other statistical package.
