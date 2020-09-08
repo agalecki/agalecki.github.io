@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<ol>
+  <li>  How to install packages needed  to run scripts from the book?
+    
+  Please use the following  instructions<br />
+  <br />
+  </li>
+
+<ul>
+  <li>pckgs &lt;-  c(&quot;plyr&quot;, &quot;reshape&quot;, &quot;RLRsim&quot;,  &quot;WWGbook&quot;, &quot;ellipse&quot;)<br />
+    install.packages(pckgs)<br />
+    <br />
+  </li>
+  <li>To install nlmeU package go to  book website at: <br />
+  <a href="http://www-personal.umich.edu/~agalecki/Web/software.html">http://www-personal.umich.edu/~agalecki/Web/software.html</a>  <br />
+  <br />
+  </li>
+  <li>To install lme4.0 package use:
+    
+  install.packages(&quot;lme4.0&quot;,  repos = &quot;http://R-Forge.R-project.org)<br />
+  <br />
+  </li>
+</ul>
+
+  <li> How to obtain list of scripts  available in nlmeU package?  <br />
+    <br />
+<ul>
+      <li>Please use:<br />
+        <br />
+library(nlmeU)
+        <br />
+        runScript()<br />
+        <br />
+      Note:?? The results of executing scripts are stored  in files: Ch02.Rout, Ch03.Rout and so on.<br />
+      <br />
+      </ul>
+  </li>
+  <li> 
+    Results of running scripts  listed by runScript() function (see item 2) are different from those included  in the book. Why? <br />
+    <br />
+    We tested scripts from our  book using R2.15.0 (2012-03-30) under Windows??  7 on x86_64-pc-mingw32/x64 (64-bit) platform. Results matched those  included in the book. We noted that results are slightly different for ??i386-pc-mingw32/i386 (32-bit) platform.<br />
+    <br />
+  </li>
+  <li>Is pdKronecker class described in  Chapter 17 and Section 20.2 available in nlmeU package?<br />
+    <br />
+  pdKronecker class is not  available in nlmeU package. It will be available in near future as part of an  additional companion package.<br />
+  <br />
+  </li>
+  <li>What should I do, if I find an  error in one of the functions?<br />
+    We tested our functions  under different scenarios, but we consider our package to be under development  and inevitably errors may occur. Please report them to <a href="mailto:agalecki@umich.edu">agalecki@umich.edu</a>.<br />
+  We are also interested in  any of your comments on how to improve functions/and or scripts distributed  with the package.</li>
+</ol>
+</body>
+</html>
